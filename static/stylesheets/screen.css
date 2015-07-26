@@ -9,7 +9,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 5, ../../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,45 +31,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -645,12 +645,10 @@ footer li a {
 }
 /* line 348, ../sass/screen.scss */
 .gallery li {
-  width: 340px;
+  width: 368px;
   /* 352px */
   margin: 30px 30px 0 0;
   /* 24px */
-  padding: 14px;
-  /* 15px */
   background-color: #e3eaea;
   border-top: 1px solid #c6cccc;
   border-left: 1px solid #c6cccc;
@@ -660,7 +658,7 @@ footer li a {
   float: left;
   position: relative;
 }
-/* line 362, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .gallery li:nth-child(2n+3) {
   margin-right: 0;
 }
@@ -688,7 +686,7 @@ footer li a {
 	margin-bottom: 0;
 }
 */
-/* line 393, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .thumb {
   width: 100%;
   height: 260px;
@@ -696,7 +694,6 @@ footer li a {
   overflow: hidden;
   display: block;
   position: relative;
-  margin-bottom: 16px;
   -webkit-box-shadow: 1px 1px 1px rgba(44, 102, 99, 0.6);
   -moz-box-shadow: 1px 1px 1px rgba(44, 102, 99, 0.6);
   box-shadow: 1px 1px 1px rgba(44, 102, 99, 0.6);
@@ -706,14 +703,14 @@ footer li a {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 405, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
 .thumb:hover {
   -webkit-box-shadow: 2px 2px 3px #2c6663;
   -moz-box-shadow: 2px 2px 3px #2c6663;
   box-shadow: 2px 2px 3px #2c6663;
 }
 
-/* line 411, ../sass/screen.scss */
+/* line 409, ../sass/screen.scss */
 .preview {
   color: #fff;
   color: rgba(255, 255, 255, 0.9);
@@ -737,7 +734,7 @@ footer li a {
   transition: all .5s ease-in-out;
 }
 
-/* line 434, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .thumb:hover .preview {
   opacity: 1;
   z-index: 2;
@@ -747,7 +744,7 @@ footer li a {
   background-blend-mode: darken;
 }
 
-/* line 444, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 .thumb:hover + h2 a {
   color: #e52436;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.08);
@@ -757,7 +754,7 @@ footer li a {
   transition: all .2s ease-in-out;
 }
 
-/* line 453, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 .gallery li h2 {
   padding: 0;
   -webkit-transition: all .2s ease-in-out;
@@ -766,35 +763,35 @@ footer li a {
   transition: all .2s ease-in-out;
 }
 
-/* line 461, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 .gallery li h6 {
   padding: 6px 0 0;
 }
 
-/* line 465, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 .gallery li .left {
   width: 60%;
 }
 
-/* line 469, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 .contact {
   background-color: #FAFFFF;
   border-top: 1px solid #C6CCCC;
   padding: 25px;
 }
 
-/* line 475, ../sass/screen.scss */
+/* line 473, ../sass/screen.scss */
 .contactblurb {
   width: 370px;
   float: left;
 }
 
-/* line 480, ../sass/screen.scss */
+/* line 478, ../sass/screen.scss */
 .contactblurb p {
   font-size: 14px;
 }
 
-/* line 484, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 fieldset {
   font-size: 14px;
   width: 338px;
@@ -810,12 +807,12 @@ fieldset {
   position: relative;
 }
 
-/* line 498, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 fieldset p {
   font-size: 14px;
 }
 
-/* line 502, ../sass/screen.scss */
+/* line 500, ../sass/screen.scss */
 input, textarea {
   background: #E3EAEA;
   color: #264040;
@@ -832,7 +829,7 @@ input, textarea {
   resize: vertical;
 }
 
-/* line 518, ../sass/screen.scss */
+/* line 516, ../sass/screen.scss */
 input[id="point"], textarea {
   width: 100%;
   -moz-box-sizing: border-box;
@@ -840,7 +837,7 @@ input[id="point"], textarea {
   box-sizing: border-box;
 }
 
-/* line 525, ../sass/screen.scss */
+/* line 523, ../sass/screen.scss */
 input[type="submit"] {
   background: #BE1E2D;
   background: -moz-linear-gradient(top, #D12132 0%, #BE1E2D 100%);
@@ -870,7 +867,7 @@ input[type="submit"] {
   margin-top: 15px;
 }
 
-/* line 546, ../sass/screen.scss */
+/* line 544, ../sass/screen.scss */
 input:hover[type="submit"] {
   background: #D93040;
   background: -moz-linear-gradient(top, #D93040 0%, #B51D2B 100%);
@@ -894,25 +891,25 @@ input:hover[type="submit"] {
   box-shadow: 1px 1px 1px rgba(44, 102, 99, 0.6);
 }
 
-/* line 562, ../sass/screen.scss */
+/* line 560, ../sass/screen.scss */
 ::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #4C7F7F;
 }
 
-/* line 565, ../sass/screen.scss */
+/* line 563, ../sass/screen.scss */
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #4C7F7F;
 }
 
-/* line 568, ../sass/screen.scss */
+/* line 566, ../sass/screen.scss */
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #4C7F7F;
 }
 
-/* line 571, ../sass/screen.scss */
+/* line 569, ../sass/screen.scss */
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: #4C7F7F;

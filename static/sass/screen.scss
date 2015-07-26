@@ -346,9 +346,8 @@ footer {
 	@include transition(all, .2s);
 
 	li {
-		width: $cols4 - 30px; /* 352px */
+		width: $cols4 - 2px; /* 352px */
 		margin: $gutter $gutter 0 0; /* 24px */
-		padding: 14px; /* 15px */
 		background-color: #e3eaea; 
 		border-top: 1px solid #c6cccc;
 		border-left: 1px solid #c6cccc;
@@ -397,7 +396,6 @@ footer {
 	overflow: hidden;
 	display: block;
 	position: relative;
-	margin-bottom: 16px;
 	@include box-shadow(null, 1px, 1px, 1px, null, rgba(44,102,99,.6));
 	@include transition(all, .2s);
 }
