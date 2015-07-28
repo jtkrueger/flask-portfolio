@@ -2,7 +2,7 @@
     <div class="container group">
         <ul class="left">
             <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a href="{{ url_for('admin') }}">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <ul class="right">
@@ -10,7 +10,7 @@
             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
         </ul>
-        <div id="logo"><a href="#"><img id="log" src="{{ url_for('static', filename='img/logo.png') }}"></a></div>
+        <div id="logo"><a href="{{ url_for('index') }}"><img id="log" src="{{ url_for('static', filename='img/logo.png') }}"></a></div>
     
     </div>
 </header>

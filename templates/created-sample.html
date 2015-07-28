@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Edit New Sample</h2>
+<form method="post">
+	<div>
+		<label for="title">Title</label>
+		<input name="title" type="text" placeholder="{{ title }}" />
+	</div>
+	<div>
+		<label for="role">Role</label>
+		<input name="role" type="text" placeholder="{{ role }}" />
+	</div>
+	<div>
+		<label for="date">Date</label>
+		<input name="date" type="text" placeholder="{{ date }}" />
+	</div>
+	<div>
+		<button type="submit">Submit Sample</button>
+	</div>
+</form>
+
+
+
+{% endblock %}

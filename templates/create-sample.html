@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Create New Sample</h2>
+<form method="post">
+	<div>
+		<label for="title">Title</label>
+		<input name="title" type="text" />
+	</div>
+	<div>
+		<label for="role">Role</label>
+		<input name="role" type="text" />
+	</div>
+	<div>
+		<label for="date">Date</label>
+		<input name="date" type="text" />
+	</div>
+	<div>
+		<button type="submit">Submit Sample</button>
+	</div>
+</form>
+
+
+
+{% endblock %}
