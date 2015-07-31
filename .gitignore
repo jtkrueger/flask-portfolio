@@ -4,3 +4,5 @@ static/.sass-cache/363e6a7a05c0a947f809438f40ced6aee483210f/print.scssc
 static/.sass-cache/363e6a7a05c0a947f809438f40ced6aee483210f/screen.scssc
 static/.sass-cache/59c96dfbc828ffd55b246bc60b3d23ee9e3b6965/_reset.scssc
 static/.sass-cache/a74ea9a62ffb32f0933053a931e6d2c1b362e3ca/_utilities.scssc
+.DS_Store
+dump.rdb
