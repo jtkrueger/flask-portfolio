@@ -161,6 +161,7 @@ img.right {
 img.left {
 	margin-right: $gutter;
 	margin-left: -($cols3);
+	box-shadow: 0 1px 2px rgba(44, 102, 99, 0.6);
 }
 
 img.center {
@@ -403,8 +404,12 @@ html {
 
 .sample-content {
 	width: $cols8; /* 600px */
-	margin: 50px auto; /* 50 px */
+	margin: 100px auto; /* 50 px */
 	padding: $gutter; /* 25px */
+	position: relative;
+	display: block;
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(44, 102, 99, 0.6);
 }
 
 
@@ -416,17 +421,21 @@ html {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-color: rgba(255,255,255,.9);
+	background-color: rgba(255,255,255,.8);
 	/*background-color: #3B8A86;
 	background: linear-gradient(to bottom, rgba(65,152,148,.98) 0%, rgba(59,138,134,.98) 100%);*/
 	z-index: 10;
 }
 
 .close-button {
-	float: right;
-	position: relative;
-	margin-right: -30px;
-	margin-top: -30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: -60px;
+	margin-right: -60px;
+	width: 30px;
+	height: 30px;
+	background-image: url('../img/close.svg');
 }
 
 
