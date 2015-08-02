@@ -387,18 +387,46 @@ footer {
 }
 */
 
+body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+}
+
+.sample-content {
+	width: $cols8; /* 600px */
+	margin: 50px auto; /* 50 px */
+	padding: $gutter; /* 25px */
+}
 
 
-#sample-content {
-	position: absolute;
+#sample-window {
+	position: fixed;
+	overflow: auto;
+	display: block;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-color: #3B8A86;
-	background: linear-gradient(to bottom, rgba(65,152,148,.8) 0%, rgba(59,138,134,.8) 100%);
+	background-color: rgba(255,255,255,.9);
+	/*background-color: #3B8A86;
+	background: linear-gradient(to bottom, rgba(65,152,148,.98) 0%, rgba(59,138,134,.98) 100%);*/
 	z-index: 10;
-	padding: 100px;
+}
+
+.close-button {
+	float: right;
+	position: relative;
+	margin-right: -30px;
+	margin-top: -30px;
 }
 
 
