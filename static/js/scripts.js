@@ -10,34 +10,17 @@ $(document).ready(function(){
         html.data('previous-overflow', html.css('overflow'));
         html.css('overflow', 'hidden');
         window.scrollTo(scrollPosition[0], scrollPosition[1]);
-
-        $('#sample').load('/samples/accounting-degree');
+        $('#sample').load('/samples/accounting-degree', function(){
+            $('#sample-window').hide().fadeIn('slow');
+        });
     });
 
     $('.close-button').on('click', function(e){
     	e.preventDefault();
         var html = jQuery('html');
         html.css('overflow', 'auto');
-    	$('#sample-window').hide();
+    	$('#sample-window').fadeOut('slow');
     });
-
-    $('#clicker').on('click', function(){
-    	alert('clicker');
-    	$('#clicker').hide();
-    	
-    });
-
-
-
-/*
-    $('.close').click(function(){
-    	alert("test");
-    })
-
-    $(.'introcontent').click(function(){
-    	alert('test');
-    })*/
-
 });
 
 $(document).mouseup(function (e)
@@ -47,6 +30,8 @@ $(document).mouseup(function (e)
     if (!container.is(e.target) // if the target of the click isn't the container...
         && container.has(e.target).length === 0) // ... nor a descendant of the container
     {
-        $('#sample-window').hide();
+        var html = jQuery('html');
+        html.css('overflow', 'auto');
+        $('#sample-window').fadeOut('slow');
     }
 });
