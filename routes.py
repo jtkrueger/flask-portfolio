@@ -15,6 +15,14 @@ def index():
 def accountingDegree():
 	return render_template('samples/accounting-degree.html')
 
+@app.route('/samples/icon-color')
+def iconColor():
+	return render_template('samples/icon-color.html')
+
+@app.route('/samples/job-board')
+def jobBoard():
+	return render_template('samples/job-board.html')
+
 @app.route('/admin', methods=['GET', 'POST'])
 def admin():
 	if request.method == 'GET':
