@@ -23,7 +23,7 @@ $(document).ready(function(){
                 html.css('overflow', 'hidden');
                 window.scrollTo(scrollPosition[0], scrollPosition[1]);
                 $('#sample').load('/samples/'+sample, function(){
-                    $('#sample-window').hide().fadeIn('slow');
+                    $('#sample-window').hide().fadeIn(200);
                 });
 
             }
@@ -40,7 +40,7 @@ $(document).mouseup(function (e)
         e.preventDefault();
         var html = jQuery('html');
         html.css('overflow', 'auto');
-        $('#sample-window').fadeOut('slow');
+        $('#sample-window').fadeOut(200);
     });
 
     var container = $('.sample-content');
@@ -50,6 +50,6 @@ $(document).mouseup(function (e)
     {
         var html = jQuery('html');
         html.css('overflow', 'auto');
-        $('#sample-window').fadeOut('slow');
+        $('#sample-window').fadeOut(200);
     }
 });

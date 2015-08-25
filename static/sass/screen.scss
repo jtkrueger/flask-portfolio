@@ -371,6 +371,7 @@ body {
 
 html {
 	height: 100%;
+	overflow-y: scroll;
 }
 
 .stop-scrolling {
@@ -397,7 +398,7 @@ html {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-color: rgba(0,0,0,.6);
+	background-color: rgba(28,41,40,.9);
 	/*background-color: #3B8A86;
 	background: linear-gradient(to bottom, rgba(65,152,148,.98) 0%, rgba(59,138,134,.98) 100%);*/
 	z-index: 10;
