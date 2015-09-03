@@ -253,22 +253,29 @@ header {
 	height: 0;
 	margin: 0 auto;
 	@include transition(all, .2s);
+	color: #D12132;
 
-  	img {
+  	svg {
   		background: #ECF4F3;
 		border: 1px solid #BE1E2D;
 		border-radius: 80px;
+		color: #D12132;
+		width: 82px;
+		height: 82px;
   		position: absolute;
   		display: block;
   		margin-top: -3px;
   		opacity: .95;
-  		@include transition(all, .2s)
+  		@include transition(background-color, .2s);
+  		fill: currentColor;
   	}
 
-  	img:hover {
-  		background: #415858;
+  	svg:hover {
+  		background: #ad1d2b;
+  		color: #d8e9e8;
   		@include box-shadow(null, 0, 0, 3px, 1px, rgba(44,102,99,1));
   		opacity: 1;
+  		@include transition(background-color, .2s);
   	}
 }
 
