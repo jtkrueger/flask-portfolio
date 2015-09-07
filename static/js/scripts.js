@@ -1,4 +1,4 @@
-var samples = ['accounting-degree','icon-color','job-board'];
+var samples = ['accounting-degree','icon-color','job-board','anvil','hay-merchant','nightingale','julep','underbelly','hpc','pastry-war','rice'];
 var samplesQuantity = samples.length;
 
 $(document).ready(function(){
@@ -43,7 +43,7 @@ $(document).mouseup(function (e)
         $('#sample-window').fadeOut(200);
     });
 
-    var container = $('.sample-content');
+    var container = $('.sample-container');
 
     if (!container.is(e.target) // if the target of the click isn't the container...
         && container.has(e.target).length === 0) // ... nor a descendant of the container
