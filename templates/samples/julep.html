@@ -1,3 +1,5 @@
+{% extends "layout.html" %}
+{% block content %}
 <div id="sample-window">
 	<div class="sample-container">
 		<div class="sample-content group">
@@ -13,3 +15,4 @@
 		<img class="center" src="{{ url_for('static', filename='img/samples/julep-big.png') }}">
 	</div>
 </div>
+{% endblock %}
