@@ -2,12 +2,11 @@ var samples = ['accounting-degree','icon-color','job-board','anvil','hay-merchan
 var samplesQuantity = samples.length;
 
 $(document).ready(function(){
+    $sampleDiv = $('<div id="sample"></div>')
+    $("body").append($sampleDiv);
 
-    for (var i = 0; i < samplesQuantity; i++) {
-        var sample = samples[i];
+    
 
-
-    }
     $('.trigger').on('click', function(e){
         e.preventDefault();
         for (var i = 0; i < samplesQuantity; i++) {
@@ -25,11 +24,11 @@ $(document).ready(function(){
                 $('#sample').load('/samples/'+sample, function(){
                     $('#sample-window').hide().fadeIn(200);
                 });
-
             }
         }
-        
     });
+
+
 
 
 });
@@ -41,6 +40,8 @@ $(document).mouseup(function (e)
         var html = jQuery('html');
         html.css('overflow', 'auto');
         $('#sample-window').fadeOut(200);
+        $('#sample header').hide();
+        $('#sample footer').hide();
     });
 
     var container = $('.sample-container');
@@ -51,5 +52,7 @@ $(document).mouseup(function (e)
         var html = jQuery('html');
         html.css('overflow', 'auto');
         $('#sample-window').fadeOut(200);
+        $('#sample header').hide();
+        $('#sample footer').hide();
     }
 });
