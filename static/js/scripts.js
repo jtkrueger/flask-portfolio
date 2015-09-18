@@ -24,7 +24,7 @@ $(document).ready(function(){
     $("#desktop").sticky({topSpacing:0});
     $("#mobile").sticky({topSpacing:0});
     $("#mobile-sub").sticky({topSpacing:60});
-/*
+
     if ( $(window).width() > 870) {
         console.log("shouldn't be small screen");
         function hasScrolled() {
@@ -66,18 +66,18 @@ $(document).ready(function(){
             // This is necessary so you never see what is "behind" the navbar.
             if (st > lastScrollTop && st > mobilebarHeight){
                 // Scroll Down
-                $("#moble-sticky-wrapper").fadeOut(200);
-                $("#moble-sub-sticky-wrapper").fadeOut(200);
-                console.log("hide mobile sticky");
+                $("#desktop").unstick();
+                $("#mobile").unstick();
+                $("#mobile-sub").unstick();
                 
                 
             } else {
                 // Scroll Up
                 if(st + $(window).height() < $(document).height()) {
                     
-                    $("#moble-sticky-wrapper").fadeIn(200);
-                    $("#moble-sub-sticky-wrapper").fadeIn(200);
-                    console.log("show mobile sticky");
+                    $("#desktop").sticky({topSpacing:0});
+                    $("#mobile").sticky({topSpacing:0});
+                    $("#mobile-sub").sticky({topSpacing:60});
                 }
             }
             
@@ -97,7 +97,7 @@ $(document).ready(function(){
     $(window).onpopstate = function(){
          console.log("beforeUnload event!");
      };
-*/
+
     
 
     $('.trigger').on('click', function(e){
