@@ -1,10 +1,103 @@
 var samples = ['accounting-degree','icon-color','job-board','anvil','hay-merchant','nightingale','julep','underbelly','hpc','pastry-war','rice'];
 var samplesQuantity = samples.length;
 
+
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#desktop').outerHeight();
+var mobilebarHeight = $('#mobile').outerHeight() + $('#mobile-sub').outerHeight();
+
+
 $(document).ready(function(){
     $sampleDiv = $('<div id="sample"></div>')
     $("body").append($sampleDiv);
 
+
+    var didScroll;
+    // on scroll, let the interval function know the user has scrolled
+    $(window).scroll(function(event){
+        didScroll = true;
+    });
+    // run hasScrolled() and reset didScroll status
+    
+
+    $("#desktop").sticky({topSpacing:0});
+    $("#mobile").sticky({topSpacing:0});
+    $("#mobile-sub").sticky({topSpacing:60});
+/*
+    if ( $(window).width() > 870) {
+        console.log("shouldn't be small screen");
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            
+            //if(Math.abs(lastScrollTop - st) <= delta)
+            //    return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $("#desktop-sticky-wrapper").fadeOut(200);
+                
+                
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    
+                    $("#desktop-sticky-wrapper").fadeIn(200);
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    } else {
+        console.log("should be small screen");
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            
+            //if(Math.abs(lastScrollTop - st) <= delta)
+            //    return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > mobilebarHeight){
+                // Scroll Down
+                $("#moble-sticky-wrapper").fadeOut(200);
+                $("#moble-sub-sticky-wrapper").fadeOut(200);
+                console.log("hide mobile sticky");
+                
+                
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    
+                    $("#moble-sticky-wrapper").fadeIn(200);
+                    $("#moble-sub-sticky-wrapper").fadeIn(200);
+                    console.log("show mobile sticky");
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+        
+
+    }
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+
+    $(window).onpopstate = function(){
+         console.log("beforeUnload event!");
+     };
+*/
     
 
     $('.trigger').on('click', function(e){

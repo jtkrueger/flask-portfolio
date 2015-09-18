@@ -257,7 +257,11 @@ header {
 	}
 }
 
-header.mobile {
+#desktop-sticky-wrapper {
+	display: none;
+}
+
+header#mobile {
 	display: block;
 
 	ul {
@@ -292,7 +296,7 @@ header.mobile {
 
 }
 
-header.mobile-sub {
+header#mobile-sub {
 	display: block;
 	height: 28px;
 	z-index: 1;
@@ -489,7 +493,7 @@ footer {
 .thumb:hover .preview {
 
   	opacity: 1;
-	z-index: 2;
+	z-index: 5;
 	background: rgba(59,138,134,.9);
 	position: absolute;
 	height: 100%;
@@ -695,8 +699,14 @@ input:hover[type="submit"] {
 
 @media (min-width: 870px) {
 
+
+#desktop-sticky-wrapper {
+	display: block;
+}
+
 header {
 	display: block;
+	z-index: 6;
 
 	.right {
 		width: $cols4;
@@ -717,11 +727,19 @@ header {
 	}
 }
 
-header.mobile {
+header#mobile {
 	display: none;
 }
 
-header.mobile-sub {
+header#mobile-sub {
+	display: none;
+}
+
+#mobile-sticky-wrapper {
+	display: none;
+}
+
+#mobile-sub-sticky-wrapper {
 	display: none;
 }
 
@@ -778,6 +796,16 @@ fieldset {
 	}
 }
 
+.sample-container {
+	width: $cols8;
+	padding: $gutter;
+}
+
+.sample-content {
+	width: $cols8; /* 770px */
+	margin: $gutter auto; /* 50 px */
+}
+
 }
 
 
@@ -813,7 +841,7 @@ header {
 }
 
 .sample-container {
-	width: $cols12 + 2 * ($gutter);
+	width: $cols12;
 	margin: 0 auto;
 	margin: 100px auto; /* 50 px */
 	padding: $gutter; /* 25px */
@@ -824,12 +852,18 @@ header {
 	margin: $gutter auto; /* 50 px */
 }
 
+
+
+}
+
+
+@media (min-width: 1433px) {
+
 .close-button {
 	margin-top: -60px;
 	margin-right: -60px;
 }
 
 }
-
 
 
