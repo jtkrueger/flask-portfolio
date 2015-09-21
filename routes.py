@@ -13,6 +13,10 @@ def index():
 	# r.get()
 	return render_template('index.html')
 
+@app.route('/samples/hmh')
+def hmh():
+	return render_template('samples/hmh.html')
+
 @app.route('/samples/hay-merchant')
 def hay_merchant():
 	return render_template('samples/hay-merchant.html')
@@ -49,13 +53,21 @@ def hpc():
 def icon_color():
 	return render_template('samples/icon-color.html')
 
+@app.route('/samples/job-board')
+def job_board():
+	return render_template('samples/job-board.html')
+
+@app.route('/samples/tsd')
+def tsd():
+	return render_template('samples/tsd.html')
+
 @app.route('/samples/accounting-degree')
 def accounting_degree():
 	return render_template('samples/accounting-degree.html')
 
-@app.route('/samples/job-board')
-def job_board():
-	return render_template('samples/job-board.html')
+@app.route('/samples/slideshow')
+def slideshow():
+	return render_template('samples/slideshow.html')
 
 @app.route('/admin', methods=['GET', 'POST'])
 def admin():

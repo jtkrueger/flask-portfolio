@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="sample-window">
+	<div class="sample-container">
+		<div class="sample-content group">
+			<a href="/" class="close-button"></a>
+			<h1>The Simple Dollar Site &amp; Logo Redesign</h1>
+			<h3><strong>Role:</strong> UI Design, UX Design, Typography</h3>
+			<h3><strong>Date:</strong> January 2013</h3>
+
+			<p>For this project, I redesigned a finance website and its logo. One unique challenge to this project was that the site had a lot of repeat traffic, so my goal was to make the redesign look as good as possible without disrupting the experience of long-time users. Most of the changes I made were typography and white space. I also created pull-quotes and a Q&amp;A format to give the articles a sharper, more polished look.</p>
+		</div>	
+		<img class="center" src="{{ url_for('static', filename='img/samples/tsd-big.png') }}">
+	</div>
+</div>
+{% endblock %}

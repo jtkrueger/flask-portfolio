@@ -1,4 +1,4 @@
-var samples = ['accounting-degree','icon-color','job-board','anvil','hay-merchant','nightingale','julep','underbelly','hpc','pastry-war','rice'];
+var samples = ['accounting-degree','icon-color','job-board','anvil','hay-merchant','nightingale','julep','underbelly','hpc','pastry-war','rice','hmh','tsd','slideshow'];
 var samplesQuantity = samples.length;
 
 
