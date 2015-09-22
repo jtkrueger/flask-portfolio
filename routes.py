@@ -1,12 +1,16 @@
-from flask import Flask, render_template, url_for, request, flash
+from flask import Flask, render_template, url_for, request, flash, redirect
 from forms import ContactForm
 from secure import *
 from flask.ext.mail import Message, Mail
+from flask_wtf.csrf import CsrfProtect
 # import redis
 
 mail = Mail()
+
+csrf = CsrfProtect()
  
 app = Flask(__name__)
+csrf.init_app(app)
 
 app.secret_key = key
 
@@ -34,11 +38,15 @@ def index():
 		%s
 		""" % (form.name.data, form.email.data, form.message.data)
 		mail.send(msg)
-		return render_template('index-sent.html')
+		return redirect(url_for('index_sent'))
 	elif request.method == 'POST' and form.validate() == False:
 		return render_template('index-error.html', form=form)
 	elif request.method == 'GET':
 		return render_template('index.html', form=form)
+
+@app.route('/index-sent')
+def index_sent():
+	return render_template('index-sent.html')
 
 @app.route('/samples/hmh')
 def hmh():

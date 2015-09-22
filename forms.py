@@ -1,4 +1,5 @@
-from wtforms import Form, BooleanField, TextField, TextAreaField, SubmitField, PasswordField, validators, ValidationError
+from flask.ext.wtf import Form
+from wtforms import BooleanField, TextField, TextAreaField, SubmitField, PasswordField, validators, ValidationError
 from wtforms.validators import DataRequired, Email
  
 class ContactForm(Form):

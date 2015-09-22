@@ -190,6 +190,9 @@
 		<div class="intro-content">
 			<h1><a name="contact" class="target">Talk to Me</a></h1>
 			<h2>Thanks for reaching out. I'll respond shortly.</h2>
+			<form method="post" action="/">
+			    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+			</form>
 		</div>	
 
 
