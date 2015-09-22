@@ -1062,7 +1062,7 @@ input:hover[type="submit"] {
 /* line 707, ../sass/screen.scss */
 .form-error {
   position: absolute;
-  background: red;
+  background: blue;
   right: 0;
   margin-right: -200px;
 }
