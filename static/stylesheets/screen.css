@@ -1061,32 +1061,35 @@ input:hover[type="submit"] {
 
 /* line 707, ../sass/screen.scss */
 .form-error {
-  position: absolute;
-  background: blue;
-  right: 0;
-  margin-right: -200px;
+  display: inline-block;
+  text-align: left;
+  padding: 5px;
+  background: #BE1E2D;
+  border: 1px solid #B51D2B;
+  color: #fff;
+  border-radius: 3px;
 }
 
 @media (min-width: 870px) {
-  /* line 720, ../sass/screen.scss */
+  /* line 723, ../sass/screen.scss */
   #desktop-sticky-wrapper {
     display: block;
   }
 
-  /* line 724, ../sass/screen.scss */
+  /* line 727, ../sass/screen.scss */
   header {
     display: block;
     z-index: 6;
   }
-  /* line 728, ../sass/screen.scss */
+  /* line 731, ../sass/screen.scss */
   header .right {
     width: 370px;
   }
-  /* line 731, ../sass/screen.scss */
+  /* line 734, ../sass/screen.scss */
   header .left {
     width: 370px;
   }
-  /* line 734, ../sass/screen.scss */
+  /* line 737, ../sass/screen.scss */
   header .left li {
     font-size: 22px;
     line-height: 34px;
@@ -1101,37 +1104,37 @@ input:hover[type="submit"] {
     transition: all 0.2s ease-in-out;
   }
 
-  /* line 747, ../sass/screen.scss */
+  /* line 750, ../sass/screen.scss */
   header#mobile {
     display: none;
   }
 
-  /* line 751, ../sass/screen.scss */
+  /* line 754, ../sass/screen.scss */
   header#mobile-sub {
     display: none;
   }
 
-  /* line 755, ../sass/screen.scss */
+  /* line 758, ../sass/screen.scss */
   #mobile-sticky-wrapper {
     display: none;
   }
 
-  /* line 759, ../sass/screen.scss */
+  /* line 762, ../sass/screen.scss */
   #mobile-sub-sticky-wrapper {
     display: none;
   }
 
-  /* line 763, ../sass/screen.scss */
+  /* line 766, ../sass/screen.scss */
   footer h1 {
     font-size: 44px;
   }
 
-  /* line 767, ../sass/screen.scss */
+  /* line 770, ../sass/screen.scss */
   .container {
     width: 830px;
   }
 
-  /* line 771, ../sass/screen.scss */
+  /* line 774, ../sass/screen.scss */
   .introcontent {
     width: 670px;
     /* 670px */
@@ -1139,38 +1142,30 @@ input:hover[type="submit"] {
     /* 30px */
   }
 
-  /* line 776, ../sass/screen.scss */
+  /* line 779, ../sass/screen.scss */
   .sample-listing {
     padding: 0 30px 30px;
   }
 
-  /* line 780, ../sass/screen.scss */
+  /* line 783, ../sass/screen.scss */
   .contact {
     width: 770px;
     padding: 30px;
   }
 
-  /* line 785, ../sass/screen.scss */
+  /* line 788, ../sass/screen.scss */
   fieldset {
     width: 338px;
     /* 370 */
     margin-left: 30px;
   }
 
-  /* line 790, ../sass/screen.scss */
-  .form-error {
-    position: absolute;
-    background: red;
-    right: 0;
-    margin-right: -200px;
-  }
-
-  /* line 797, ../sass/screen.scss */
+  /* line 793, ../sass/screen.scss */
   .contact-blurb {
     width: 370px;
   }
 
-  /* line 801, ../sass/screen.scss */
+  /* line 797, ../sass/screen.scss */
   .gallery {
     margin: 40px 30px;
     -webkit-transition: all 0.2s ease-in-out;
@@ -1178,7 +1173,7 @@ input:hover[type="submit"] {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  /* line 805, ../sass/screen.scss */
+  /* line 801, ../sass/screen.scss */
   .gallery li {
     width: 368px;
     margin: 30px 30px 0 0;
@@ -1192,18 +1187,18 @@ input:hover[type="submit"] {
     float: left;
     position: relative;
   }
-  /* line 818, ../sass/screen.scss */
+  /* line 814, ../sass/screen.scss */
   .gallery li:nth-child(2n) {
     margin-right: 0;
   }
 
-  /* line 823, ../sass/screen.scss */
+  /* line 819, ../sass/screen.scss */
   .sample-container {
     width: 770px;
     padding: 30px;
   }
 
-  /* line 828, ../sass/screen.scss */
+  /* line 824, ../sass/screen.scss */
   .sample-content {
     width: 770px;
     /* 770px */
@@ -1212,44 +1207,44 @@ input:hover[type="submit"] {
   }
 }
 @media (min-width: 1270px) {
-  /* line 839, ../sass/screen.scss */
+  /* line 835, ../sass/screen.scss */
   header .right {
     width: 570px;
   }
-  /* line 842, ../sass/screen.scss */
+  /* line 838, ../sass/screen.scss */
   header .left {
     width: 570px;
   }
 
-  /* line 847, ../sass/screen.scss */
+  /* line 843, ../sass/screen.scss */
   .container {
     width: 1230px;
   }
 
-  /* line 851, ../sass/screen.scss */
+  /* line 847, ../sass/screen.scss */
   .gallery {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  /* line 854, ../sass/screen.scss */
+  /* line 850, ../sass/screen.scss */
   .gallery li {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  /* line 858, ../sass/screen.scss */
+  /* line 854, ../sass/screen.scss */
   .gallery li:nth-child(2n) {
     margin-right: 30px;
   }
-  /* line 862, ../sass/screen.scss */
+  /* line 858, ../sass/screen.scss */
   .gallery li:nth-child(3n) {
     margin-right: 0;
   }
 
-  /* line 867, ../sass/screen.scss */
+  /* line 863, ../sass/screen.scss */
   .sample-container {
     width: 1170px;
     margin: 0 auto;
@@ -1259,22 +1254,35 @@ input:hover[type="submit"] {
     /* 25px */
   }
 
-  /* line 874, ../sass/screen.scss */
+  /* line 870, ../sass/screen.scss */
   .sample-content {
     width: 770px;
     /* 770px */
     margin: 30px auto;
     /* 50 px */
   }
+
+  /* line 875, ../sass/screen.scss */
+  .form-error {
+    position: absolute;
+    text-align: left;
+    padding: 5px;
+    left: 400px;
+    width: 170px;
+    background: #BE1E2D;
+    border: 1px solid #B51D2B;
+    color: #fff;
+    border-radius: 3px;
+  }
 }
 @media (min-width: 1433px) {
-  /* line 886, ../sass/screen.scss */
+  /* line 895, ../sass/screen.scss */
   .close-button {
     margin-top: -60px;
     margin-right: -60px;
   }
 
-  /* line 891, ../sass/screen.scss */
+  /* line 900, ../sass/screen.scss */
   .close-bottom {
     margin-bottom: -60px;
     margin-right: -60px;

@@ -1,5 +1,5 @@
 {{ form.csrf_token }}
-
+<!--
   {% if form.errors %}
     <ul class="errors">
         {% for field_name, field_errors in form.errors|dictsort if field_errors %}
@@ -9,16 +9,18 @@
         {% endfor %}
     </ul>
 {% endif %}
+-->
 
   <p>Hi Jordan!</p>
-  <p>My {{ form.name.label }} is 
+  <p>My {{ form.name.label }} is <br>
   	{{ form.name(placeholder="Not Freddy Krueger") }}
   	{% if form.name.errors %}
 	  	{% for error in form.name.errors %}
 	  		<span class="form-error">{{ error }}</span>
 	  	{% endfor %}
 	{% endif %}
-  	, and my {{ form.email.label }} address is 
+  	,<br>
+  	and my {{ form.email.label }} address is <br>
   	{{ form.email(placeholder="notfreddy@krueger.me") }}
   	{% if form.email.errors %}
   		<span class="form-error">

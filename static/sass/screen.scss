@@ -705,10 +705,13 @@ input:hover[type="submit"] {
 }
 
 .form-error {
-	position: absolute;
-	background: blue;
-	right: 0;
-	margin-right: -200px;
+	display: inline-block;
+	text-align: left;
+	padding: 5px;
+	background: #BE1E2D;
+	border: 1px solid #B51D2B;
+	color: #fff;
+	border-radius: 3px;
 }
 
 
@@ -785,13 +788,6 @@ footer h1 {
 fieldset {
 	width: $cols4 - 32px; /* 370 */
 	margin-left: $gutter;
-}
-
-.form-error {
-	position: absolute;
-	background: red;
-	right: 0;
-	margin-right: -200px;
 }
 
 .contact-blurb {
@@ -874,6 +870,19 @@ header {
 .sample-content {
 	width: $cols8; /* 770px */
 	margin: $gutter auto; /* 50 px */
+}
+
+.form-error {
+	position: absolute;
+	text-align: left;
+	padding: 5px;
+	left: $cols4 + $gutter;
+	width: $cols2;
+
+	background: #BE1E2D;
+	border: 1px solid #B51D2B;
+	color: #fff;
+	border-radius: 3px;
 }
 
 
