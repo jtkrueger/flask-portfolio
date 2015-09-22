@@ -1,0 +1,42 @@
+
+
+  {% if form.errors %}
+    <ul class="errors">
+        {% for field_name, field_errors in form.errors|dictsort if field_errors %}
+            {% for error in field_errors %}
+                <li>{{ form[field_name].label }}: {{ error }}</li>
+            {% endfor %}
+        {% endfor %}
+    </ul>
+{% endif %}
+
+  <p>Hi Jordan!</p>
+  <p>My {{ form.name.label }} is 
+  	{{ form.name(placeholder="Not Freddy Krueger") }}
+  	{% if form.name.errors %}
+	  	{% for error in form.name.errors %}
+	  		<span class="form-error">{{ error }}</span>
+	  	{% endfor %}
+	{% endif %}
+  	, and my {{ form.email.label }} address is 
+  	{{ form.email(placeholder="notfreddy@krueger.me") }}
+  	{% if form.email.errors %}
+  		<span class="form-error">
+	  	{% for error in form.email.errors %}
+	  		{{ error }}
+	  	{% endfor %}
+	  	</span>
+	{% endif %}
+  	.</p>
+  <p>There's a lot I have to say, so I'll just get to the {{ form.message.label }}:
+  <br>
+  {{ form.message(placeholder="I just wanted to say...") }}
+  {% if form.message.errors %}
+  		<span class="form-error">
+	  	{% for error in form.message.errors %}
+	  		{{ error }}
+	  	{% endfor %}
+	  	</span>
+	{% endif %}
+  Thanks! <br>
+	<input type=submit value=Send>

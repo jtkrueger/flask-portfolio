@@ -583,7 +583,16 @@ html {
 	right: 0;
 	top: 0;
 	margin-top: -60px;
+	width: 30px;
+	height: 30px;
+	background-image: url('../img/close.svg');
+}
 
+.close-bottom {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-bottom: -60px;
 	width: 30px;
 	height: 30px;
 	background-image: url('../img/close.svg');
@@ -639,6 +648,7 @@ input, textarea {
 
 input[id="point"], textarea {
 	width: 100%;
+	min-height: 150px;
 	-moz-box-sizing:    border-box;
     -webkit-box-sizing: border-box;
     box-sizing:         border-box;
@@ -692,6 +702,13 @@ input:hover[type="submit"] {
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    #4C7F7F;
+}
+
+.form-error {
+	position: absolute;
+	background: red;
+	right: 0;
+	margin-right: -200px;
 }
 
 
@@ -768,6 +785,13 @@ footer h1 {
 fieldset {
 	width: $cols4 - 32px; /* 370 */
 	margin-left: $gutter;
+}
+
+.form-error {
+	position: absolute;
+	background: red;
+	right: 0;
+	margin-right: -200px;
 }
 
 .contact-blurb {
@@ -862,6 +886,12 @@ header {
 .close-button {
 	margin-top: -60px;
 	margin-right: -60px;
+}
+
+.close-bottom {
+	margin-bottom: -60px;
+	margin-right: -60px;
+	
 }
 
 }

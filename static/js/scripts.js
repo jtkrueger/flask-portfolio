@@ -1,7 +1,6 @@
 var samples = ['accounting-degree','icon-color','job-board','anvil','hay-merchant','nightingale','julep','underbelly','hpc','pastry-war','rice','hmh','tsd','slideshow'];
 var samplesQuantity = samples.length;
 
-
 var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('#desktop').outerHeight();

@@ -1,17 +1,44 @@
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, url_for, request, flash
+from forms import ContactForm
+from secure import *
+from flask.ext.mail import Message, Mail
 # import redis
+
+mail = Mail()
  
-app = Flask(__name__)      
+app = Flask(__name__)
+
+app.secret_key = key
+
+app.config["MAIL_SERVER"] = "smtp.gmail.com"
+app.config["MAIL_PORT"] = 465
+app.config["MAIL_USE_SSL"] = True
+app.config["MAIL_USERNAME"] = email
+app.config["MAIL_PASSWORD"] = password
+ 
+mail.init_app(app)
 
 # connect to redis data store
 #r = redis.StrictRedis(host='localhost',port=6379,db=0)
 
  
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-	# r.get()
-	return render_template('index.html')
+	form = ContactForm(request.form)
+
+	if request.method == 'POST' and form.validate() == True:
+		msg = Message(subject='Web Mail', sender='contact@example.com', recipients=['jordantkrueger@gmail.com'])
+		msg.body = """
+		From: %s <%s>
+		%s
+		""" % (form.name.data, form.email.data, form.message.data)
+		mail.send(msg)
+		return render_template('index-sent.html')
+	elif request.method == 'POST' and form.validate() == False:
+		return render_template('index-error.html', form=form)
+	elif request.method == 'GET':
+		return render_template('index.html', form=form)
 
 @app.route('/samples/hmh')
 def hmh():
