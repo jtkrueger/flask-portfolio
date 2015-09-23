@@ -32,7 +32,7 @@ def index():
 	form = ContactForm(request.form)
 
 	if request.method == 'POST' and form.validate() == True:
-		msg = Message(subject='Web Mail', sender='contact@example.com', recipients=['jordantkrueger@gmail.com'])
+		msg = Message(subject='Web Mail', sender=form.email.data, recipients=['jordantkrueger@gmail.com'])
 		msg.body = """
 		From: %s <%s>
 		%s
