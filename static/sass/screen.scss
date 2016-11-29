@@ -197,7 +197,7 @@ header {
 	background: linear-gradient(to bottom, lighten($color1, 4) 0%, $color1 100%);
 	height: auto;
 	color: #fff;
-	font-family: 'Roboto Condensed' sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
 	border-bottom: 2px solid #2c6663;
 	position: relative;
@@ -313,6 +313,14 @@ header#mobile-sub {
 			opacity: .8;
 			@include transition(all, .2s);
 			font-size: 20px;
+		}
+
+		li:first-child {
+			margin-left: 0;
+		}
+
+		li:last-child {
+			margin-right: 0;
 		}
 
 		i {
@@ -717,7 +725,7 @@ input:hover[type="submit"] {
 
 
 
-@media (min-width: 870px) {
+@media screen and (min-width: 870px) {
 
 
 #desktop-sticky-wrapper {
@@ -829,7 +837,7 @@ fieldset {
 }
 
 
-@media (min-width: 1270px) {
+@media screen and (min-width: 1270px) {
 
 header {
 	.right {
@@ -890,7 +898,7 @@ header {
 }
 
 
-@media (min-width: 1433px) {
+@media screen and (min-width: 1433px) {
 
 .close-button {
 	margin-top: -60px;
