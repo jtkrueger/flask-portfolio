@@ -20,35 +20,6 @@
 
 
 
-#single-col {
-	width: $cols1;
-	float: left;
-	background: blue;
-	margin-left: $gutter;
-}
-
-#first-div {
-    width: $cols3;
-	float: left;
-	background: red;
-}
-
-#second-div {
-	width: $cols2;
-        margin: 0 $gutter;
- 	float: left;
- 	background: blue;
-}
-
-#center-3col {
-	width: $cols4;
-	background: green;
-	margin: 0 auto;
-}
-
-
-
-
 
 
 
@@ -444,6 +415,10 @@ footer {
 	border-bottom: 1px solid #C6CCCC;
 }
 
+.sample-listing .container {
+	max-width: 450px;
+}
+
 .gallery {
 	margin-top: 30px;
 	@include transition(all, .2s);
@@ -638,6 +613,10 @@ fieldset p {
 	font-size: 14px;
 }
 
+fieldset p:first-of-type {
+	padding-top: 0;
+}
+
 input, textarea {
 	background: #E3EAEA;
 	color: #264040;
@@ -722,10 +701,28 @@ input:hover[type="submit"] {
 	border-radius: 3px;
 }
 
+@media screen and (max-width: 875px) {
+
+#desktop-sticky-wrapper {
+	display: none;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 42px;
+	padding-top: 42px;
+
+}
+
+h2 {
+	font-size: 22px;
+	line-height: 28px;
+}
+
+}
 
 
-
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 875px) {
 
 
 #desktop-sticky-wrapper {
@@ -784,8 +781,12 @@ footer h1 {
 	padding: $gutter; /* 30px */
 }
 
-.sample-listing {
+/*.sample-listing {
 	padding: 0 $gutter $gutter;
+}*/
+
+.sample-listing .container {
+	max-width: 100%;
 }
 
 .contact {
@@ -837,7 +838,7 @@ fieldset {
 }
 
 
-@media screen and (min-width: 1270px) {
+@media screen and (min-width: 1275px) {
 
 header {
 	.right {
@@ -866,6 +867,11 @@ header {
 	li:nth-child(3n) {
 		margin-right: 0;
 	}
+}
+
+.sample-listing .container {
+
+	width: $cols12 + 2 * ($gutter);
 }
 
 .sample-container {
